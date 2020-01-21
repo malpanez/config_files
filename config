@@ -1,0 +1,15 @@
+Host bitbucket.rxpdev.com
+    User miguel.alpanez
+	IdentitiesOnly yes
+	IdentityFile ~/.ssh/miguelalpanez_ed25519
+	StrictHostKeyChecking yes
+	BatchMode yes
+	LogLevel INFO
+
+Host github.com
+    User malpanez
+	IdentitiesOnly yes
+	IdentityFile ~/.ssh/miguelalpanez_ed25519
+	StrictHostKeyChecking yes
+	BatchMode yes
+	LogLevel INFO
