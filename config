@@ -1,4 +1,4 @@
-Host bitbucket.rxpdev.com
+Match Address 192.168.24.100,82.141.217.81 Host bitbucket.rxpdev.com
     User miguel.alpanez
 	IdentitiesOnly yes
 	IdentityFile ~/.ssh/miguelalpanez_ed25519
@@ -6,7 +6,7 @@ Host bitbucket.rxpdev.com
 	BatchMode yes
 	LogLevel INFO
 
-Host github.com
+Match Address 192.168.24.100,82.141.217.81 Host github.com
     User malpanez
 	IdentitiesOnly yes
 	IdentityFile ~/.ssh/miguelalpanez_ed25519
