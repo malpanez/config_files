@@ -1,15 +1,15 @@
-Match Host bitbucket.rxpdev.com
-    User miguel.alpanez
+Match Host server.example.com
+    User tux
 	IdentitiesOnly yes
-	IdentityFile ~/.ssh/miguelalpanez_ed25519
+	IdentityFile ~/.ssh/id_ed25519
 	StrictHostKeyChecking yes
 	BatchMode yes
 	LogLevel INFO
 
-Match Host github.com
-    User malpanez
+Match Host server.example.com
+    User tux
 	IdentitiesOnly yes
-	IdentityFile ~/.ssh/miguelalpanez_ed25519
+	IdentityFile ~/.ssh/id_eda25519
 	StrictHostKeyChecking yes
 	BatchMode yes
 	LogLevel INFO
