@@ -1,0 +1,33 @@
+# Starship prompt tuned for both Bash and Zsh usage
+add_newline = false
+format = "[➜](bold blue) $all"
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+style = "bold purple"
+
+[git_status]
+format = "([$all_status$ahead_behind]($style)) "
+style = "fg:208"
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+style = "bold cyan"
+
+[nodejs]
+disabled = false
+symbol = "⬢ "
+
+[python]
+disabled = false
+symbol = "🐍 "
+pyenv_version_name = true
+
+[uv]
+format = "via [uv $version]($style) "
+style = "bold yellow"

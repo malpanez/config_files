@@ -1,0 +1,62 @@
+# Global git configuration (use with GNU Stow)
+[user]
+    name = Your Name
+    email = your@email
+    signingkey =
+
+[core]
+    editor = vim
+    autocrlf = input
+    whitespace = fix,-indent-with-non-tab,trailing-space,space-before-tab
+    excludesfile = ~/.gitignore_global
+    fsmonitor = true
+
+[color]
+    ui = auto
+
+[commit]
+    gpgsign = false
+    verbose = true
+
+[diff]
+    tool = vimdiff
+    algorithm = histogram
+    colorMoved = zebra
+
+[fetch]
+    prune = true
+
+[merge]
+    conflictstyle = zdiff3
+
+[init]
+    defaultBranch = main
+
+[status]
+    submoduleSummary = true
+
+[pull]
+    rebase = true
+
+[push]
+    default = current
+
+[rebase]
+    autosquash = true
+    autostash = true
+
+[alias]
+    co = checkout
+    br = branch
+    st = status -sb
+    lg = log --graph --abbrev-commit --decorate --date=relative --format='%C(bold blue)%h%Creset -%C(bold red)%d%Creset %s %C(dim white)- %cr %C(bold green)%an%Creset'
+    amend = commit --amend --no-edit
+
+[credential]
+    helper = manager-core
+
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig.work
+
+[includeIf "gitdir:~/personal/"]
+    path = ~/.gitconfig.personal

@@ -1,0 +1,13 @@
+{
+    "$schema": "vscode://schemas/settings/profile",
+    "name": "Ansible Ops",
+    "settings": {
+        "ansible.languageServer.enabled": true,
+        "ansible.languageServer.path": "ansible-language-server",
+        "ansible.python.interpreterPath": "python3",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "yaml.format.enable": true,
+        "yaml.validate": true
+    }
+}

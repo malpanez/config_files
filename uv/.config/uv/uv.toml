@@ -1,0 +1,15 @@
+[python]
+managed = true
+compile-bytecode = true
+
+[pip]
+default-python = "python3"
+prefer-binary = false
+require-virtualenv = true
+install-timeout = 120
+
+[cache]
+dir = "~/.cache/uv"
+
+[resolver]
+network-behavior = "prefer-offline"

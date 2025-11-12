@@ -1,0 +1,16 @@
+{
+    "$schema": "vscode://schemas/settings/profile",
+    "name": "Python Focus",
+    "settings": {
+        "python.analysis.typeCheckingMode": "strict",
+        "python.testing.pytestArgs": [
+            "-q",
+            "--maxfail=1"
+        ],
+        "python.envFile": "${workspaceFolder}/.env.development",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always",
+            "source.fixAll": "always"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+# Compiled
+*.o
+*.obj
+*.pyc
+__pycache__/
+
+# Logs
+*.log
+*.out
+
+# Editors
+*~
+.DS_Store
+.idea/
+.vscode/

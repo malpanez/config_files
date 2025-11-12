@@ -1,0 +1,24 @@
+# htop configuration
+fields=0 48 17 18 38 39 46 47 1
+sort_key=46
+sort_direction=1
+hide_kernel_threads=1
+hide_userland_threads=0
+shadow_other_users=0
+show_thread_names=1
+show_program_path=1
+highlight_base_name=1
+highlight_megabytes=1
+highlight_threads=1
+highlight_changes=1
+update_process_names=1
+find_comm_in_cmdline=1
+strip_exe_from_cmdline=1
+color_scheme=0
+delay=15
+detail=0
+left_meter_modes=CPU
+left_meter_modes=Memory
+right_meter_modes=Tasks
+right_meter_modes=LoadAverage
+right_meter_modes=Uptime

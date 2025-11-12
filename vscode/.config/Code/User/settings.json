@@ -1,0 +1,105 @@
+{
+    // Quality of life
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Default Dark Modern",
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.renderWhitespace": "selection",
+    "editor.minimap.enabled": false,
+    "editor.rulers": [80, 100, 120],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.scrollback": 10000,
+    "explorer.confirmDelete": false,
+
+    // Git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "gitlens.hovers.currentLine.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+
+    // Python / uv
+    "python.defaultInterpreterPath": "~/.venv/bin/python",
+    "python.linting.enabled": true,
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.pytestEnabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "88"
+    ],
+    "python.terminal.activateEnvironment": true,
+    "python.envFile": "${workspaceFolder}/.env",
+    "uv.enable": true,
+    "uv.enableFormatter": true,
+
+    // Terraform
+    "terraform.codelens.enabled": true,
+    "terraform.format": true,
+    "terraform.indexing": {
+        "enabled": true
+    },
+    "terraform.languageServer": {
+        "args": [
+            "serve"
+        ]
+    },
+
+    // Go
+    "go.toolsManagement.autoUpdate": true,
+    "go.useLanguageServer": true,
+    "go.formatTool": "gofmt",
+    "gopls": {
+        "ui.semanticTokens": true,
+        "formatting.gofumpt": true,
+        "staticcheck": true
+    },
+    "go.testFlags": [
+        "-race"
+    ],
+
+    // LaTeX
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.clean.enabled": true,
+    "latex-workshop.message.error.show": true,
+
+    // Ansible
+    "ansible.python.interpreterPath": "python3",
+    "ansible.validation.lint.enabled": true,
+    "ansible.validation.lint.path": "ansible-lint",
+    "ansible.validation.lint.arguments": "-p",
+
+    // Formatting overrides per language
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform"
+    },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "[yaml]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[latex]": {
+        "editor.wordWrap": "on"
+    }
+}

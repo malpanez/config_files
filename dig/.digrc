@@ -1,0 +1,10 @@
+# Preferred dig defaults
++noall
++answer
++authority
++comments
++stats
++time=3
++tries=1
++idnin
++multiline

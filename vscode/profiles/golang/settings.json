@@ -1,0 +1,16 @@
+{
+    "$schema": "vscode://schemas/settings/profile",
+    "name": "Go Builder",
+    "settings": {
+        "gopls": {
+            "ui.completion.usePlaceholders": true,
+            "symbolScope": "workspace",
+            "build.directoryFilters": ["-vendor"]
+        },
+        "go.testOnSave": true,
+        "go.testFlags": ["-race", "-count=1"],
+        "go.lintTool": "golangci-lint",
+        "go.lintFlags": ["--fast"],
+        "go.coverOnTestPackage": true
+    }
+}

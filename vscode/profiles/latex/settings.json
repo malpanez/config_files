@@ -1,0 +1,14 @@
+{
+    "$schema": "vscode://schemas/settings/profile",
+    "name": "LaTeX Author",
+    "settings": {
+        "latex-workshop.view.pdf.viewer": "external",
+        "latex-workshop.synctex.afterBuild.enabled": true,
+        "latex-workshop.latex.recipes": [
+            {
+                "name": "latexmk (xelatex)",
+                "tools": ["xelatex"]
+            }
+        ]
+    }
+}

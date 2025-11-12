@@ -1,0 +1,14 @@
+{
+    "$schema": "vscode://schemas/settings/profile",
+    "name": "Terraform Ops",
+    "settings": {
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false,
+        "terraform.languageServer": {
+            "args": ["serve", "-log-file", "${workspaceFolder}/.terraform-ls.log"]
+        },
+        "terraform.experiments": {
+            "resourceCompletion": true
+        }
+    }
+}
